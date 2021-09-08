@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'data-between-components';
+
+  fruits = ['Mango', 'Orange', 'Banana'];
+
+  constructor() { }
+
+  addFruit (item:any) {
+    this.fruits.push(item);
+  }  
 }
